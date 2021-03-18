@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "882094988854",
+    "firebase_url": "https://acmarket-cc586.firebaseio.com",
+    "project_id": "acmarket-cc586",
+    "storage_bucket": "acmarket-cc586.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882094988854:android:0555a9fbbe7fbe81e18297",
+        "android_client_info": {
+          "package_name": "com.gesdes.acmarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882094988854-cepaokfl0vbf3sjumkants2lc3vo6fr0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzfhVA_80F2Ih_n1O250lT7sITY_VJ8HE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "882094988854-cepaokfl0vbf3sjumkants2lc3vo6fr0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

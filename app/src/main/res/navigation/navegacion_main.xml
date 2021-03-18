@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacion_main"
+    app:startDestination="@id/navigation_tiendas">
+
+    <fragment
+        android:id="@+id/navigation_tiendas"
+        android:name="com.gesdes.acmarket.fragments.TiendasFragment"
+        android:label="fragment_tiendas"
+        tools:layout="@layout/fragment_tiendas" />
+    <fragment
+        android:id="@+id/navigation_perfil"
+        android:name="com.gesdes.acmarket.fragments.PerfilFragment"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/navigation_soporte"
+        android:name="com.gesdes.acmarket.fragments.SoporteFragment"
+        android:label="fragment_soporte"
+        tools:layout="@layout/fragment_soporte" />
+    <fragment
+        android:id="@+id/navigation_cerrar_sesion"
+        android:name="com.gesdes.acmarket.fragments.CerrarSesionFragment"
+        android:label="fragment_cerrar_sesion"
+        tools:layout="@layout/fragment_cerrar_sesion" />
+    <fragment
+        android:id="@+id/nav_compartir"
+        android:name="com.gesdes.acmarket.fragments.CompartirAppFragment"
+        android:label="fragment_compartir_app"
+        tools:layout="@layout/fragment_compartir_app" />
+    <fragment
+        android:id="@+id/pedidosMainFragment"
+        android:name="com.gesdes.acmarket.fragments.PedidosMainFragment"
+        android:label="fragment_pedidos_main"
+        tools:layout="@layout/fragment_pedidos_main" />
+    <fragment
+        android:id="@+id/busquedaPorCategoria"
+        android:name="com.gesdes.acmarket.fragments.BusquedaPorCategoriaFragment"
+        android:label="fragment_busqueda_por_categoria"
+        tools:layout="@layout/fragment_busqueda_por_categoria" />
+
+</navigation>

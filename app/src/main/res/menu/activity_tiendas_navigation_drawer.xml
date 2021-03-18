@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+
+        <item android:id="@+id/navigation_perfil" android:icon="@drawable/usuario" android:title="@string/title_perfil" />
+
+        <item android:id="@+id/pedidosMainFragment" android:icon="@drawable/documento" android:title="@string/title_pedidos" />
+        <!--<item android:id="@+id/navigation_pedidos_old" android:icon="@drawable/documento_buscar" android:title="@string/title_historia_pedidos" />-->
+
+        <item android:id="@+id/nav_compartir" android:icon="@drawable/enviar" android:title="@string/title_invita_amigos" />
+
+        <item android:id="@+id/navigation_soporte" android:icon="@drawable/soporte" android:title="@string/title_soporte" />
+
+        <item
+            android:id="@+id/navigation_cerrar_sesion"
+            android:icon="@drawable/cerrar"
+            android:title="@string/title_cerrar_sesion" />
+
+    </group>
+
+</menu>

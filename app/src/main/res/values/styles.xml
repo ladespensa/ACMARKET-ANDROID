@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="custom_btn_green">
+        <item name="android:background">@drawable/selector_btn_green</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="custom_btn_green_circular">
+        <item name="android:background">@drawable/selector_btn_green_circular</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="custom_btn_gray">
+        <item name="android:background">@drawable/selector_btn_gray</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="custom_btn_green_transparent_light">
+        <item name="android:background">@drawable/selector_btn_green_transparent_green_light</item>
+        <item name="android:textColor">@color/green_light</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="bkg_white_border_rounded">
+        <item name="android:background">@drawable/bkg_white_border_rounded</item>
+    </style>
+
+    <style name="custom_btn_compartir">
+        <item name="android:background">@drawable/selector_btn_transparent_border_radius_white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="selector_tipos_tiendas">
+        <item name="background">@drawable/selector_tipo_tienda</item>
+    </style>
+
+    <style name="bkg_white_border_rounded_transparent">
+        <item name="android:background">@drawable/selector_white_gray_transparent_border_rounded_transparent</item>
+    </style>
+
+    <style name="custom_btn_transparent_gray">
+        <item name="android:background">@drawable/selector_btn_transparent_gray</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".activities.ProductosListActivity">
+
+  <ProgressBar
+      android:id="@+id/pbCargandoProductosList"
+      style="?android:attr/progressBarStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:elevation="15dp"
+      android:indeterminateDrawable="@drawable/circular_progress_dialog"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="@+id/listaProductosProductosList"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/clHeaderProductosList"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/white"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/tvNombreProductosCategoriasList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="PRODUCTOS"
+        android:textColor="@color/green_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/imageButtonCarritoProductosList"
+        style="@style/custom_btn_green_transparent_light"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="AbrirCarrito"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tcContadorCarritoProductosList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1000"
+        android:textAlignment="center"
+        android:textColor="@color/green_light"
+        android:textStyle="bold"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonCarritoProductosList"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonCarritoProductosList"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonCarritoProductosList"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonCarritoProductosList"
+        app:layout_constraintWidth_max="20dp" />
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <TextView
+      android:id="@+id/tvTitleProductosProductosList"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="20dp"
+      android:text="Productos"
+      android:textColor="#000000"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/clHeaderProductosList" />
+
+  <GridView
+      android:id="@+id/listaProductosProductosList"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layoutAnimation="@anim/layout_animation"
+      android:numColumns="3"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/etBuscarProductosProductosList" />
+
+  <EditText
+      android:id="@+id/etBuscarProductosProductosList"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="20dp"
+      android:drawableLeft="@android:drawable/ic_menu_search"
+      android:ems="10"
+      android:hint="Buscar"
+      android:inputType="text"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvTitleProductosProductosList" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
